@@ -39,7 +39,7 @@
             }
 
         </style>
-            <h1><a href="#top">Vítejte na stránkách Radislava Šplíchala blablabla</a></h1>
+            <h1><a href="#top">Vítejte na stránkách Radislava Šplíchala</a></h1>
             <p>Welcome</p>
 
 
