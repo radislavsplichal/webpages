@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    //echo $_SESSION['admin'];
+?>    
+
 <!DOCTYPE html>
 <html lang="cs">
     <head>

@@ -1,3 +1,6 @@
+<?php
+ 
+?>
 <!DOCTYPE html>
 
 
@@ -52,13 +55,19 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                     <!--  INVISIBLE FOR ANONYMOUS   -->
-                    <ul class="nav navbar-nav">
+                   <ul class="nav navbar-nav"> 
+                       <li><a href="newuserf.php">Registrace</a></li>
+                <?php 
+                    if(isset($_SESSION['views'])){
+                    if ($_SESSION['admin'] == 1){
+                    echo ' 
                         <li><a href="newarticleform.php">Nový článek</a></li>
                         <li><a href="list.php">Seznam článků</a></li>
-                        <li><a href="newuserf.php">Registrace</a></li>
-                    </ul>
+                    ';}}
+                            ?> 
+                </ul>
                     <?php
-                    session_start();
+                    
                     if (isset($_SESSION['username'])) {
                         include '/core/signout.html';
                         

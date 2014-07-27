@@ -28,7 +28,9 @@ if ($row && $pass === $row['password'] )  {
 
 
     mysql_close($link);
+    $_SESSION['admin']=1;
     header('Location: ../index.php');
+    
 } else {
 
     echo "Login Unsuccesfull";
