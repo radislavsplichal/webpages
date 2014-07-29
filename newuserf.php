@@ -8,8 +8,13 @@ if (isset($_SESSION['badpswd'])) {
     echo 2;
 }
 
-if (isset($_SESSION['badcaptcha']))
-    echo $_SESSION['badcaptcha'];
+if (isset($_SESSION['badcaptcha'])){
+   $warnbadcaptcha = true;
+   echo 3;
+} else {
+    $warnbadcaptcha = false;
+    echo 4;
+}
 ?>
 <!DOCTYPE html>
 <html lang="cs">
