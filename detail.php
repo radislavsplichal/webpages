@@ -4,7 +4,7 @@
     }
     img {
          width: 100%;    
-         height: auto;
+         height:max-content;
          float:left;
          
         

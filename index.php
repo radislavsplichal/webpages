@@ -1,6 +1,6 @@
 <?php
-    session_start();
-    //echo $_SESSION['admin'];
+session_start();
+//echo $_SESSION['admin'];
 ?>    
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
         <meta name="description" content="Personal page">
         <meta name="author" content="Ruda">
 
-        
+
     </head>
 
     <body>
@@ -26,40 +26,41 @@
         include'header.html';
         ?>
 
+ <style>
 
+                p{
+                    text-align: left;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+                a:hover {
+                    text-decoration: none;
+                    color: grey;
+                }
+                div#content{
+                    width: 70%;
+                }
+
+            </style>
         <div class="jumbotron">
-            <style>
            
-            p{
-                text-align: left;
-            }
-
-            a {
-                text-decoration: none;
-                color: black;
-            }
-            a:hover {
-                text-decoration: none;
-                color: grey;
-            }
-
-        </style>
             <h1><a href="#top">Welcome</a></h1>
             <hr>
 
+            <div id="content">
+                <?php 
+                include 'home.php';
+                ?>
+            </div>
+            <p><a href="#top" class="btn btn-primary btn-lg" role="button">Back on Top &raquo;</a></p>
 
 
 
             <?php
-            include 'home.php';
+            include'footer.html';
             ?>
-
-            <p><a href="#top" class="btn btn-primary btn-lg" role="button">Back on Top &raquo;</a></p>
-        </div>
-
-
-<?php
-include'footer.html';
-?>
     </body>
 </html>

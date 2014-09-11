@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html lang="cs">
+<html >
 
        
   <?php 
@@ -23,7 +23,7 @@ $row = mysql_fetch_assoc($result);
 
 
 
-<?php include'head.html' ?>
+<?php include'signup.php' ?>
 
 <body>
     
