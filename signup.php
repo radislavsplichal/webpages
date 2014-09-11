@@ -54,7 +54,7 @@
                 <ul class="nav navbar-nav"> 
                     <li><a href="newuserf.php">Registrace</a></li>
                     <?php
-                    if (isset($_SESSION['views'])) {
+                    if (isset($_SESSION['admin'])) {
                         if ($_SESSION['admin'] == 1) {
                             echo ' 
                         <li><a href="newarticleform.php">Nový článek</a></li>

@@ -44,8 +44,8 @@
             }
 
         </style>
-            <h1><a href="#top">Vítejte na stránkách Radislava Šplíchala</a></h1>
-            <p>Welcome</p>
+            <h1><a href="#top">Welcome</a></h1>
+            <hr>
 
 
 
