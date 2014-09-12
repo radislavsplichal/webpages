@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+
 $username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
 $password2 = filter_input(INPUT_POST, 'password2');

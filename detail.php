@@ -74,7 +74,8 @@
             $row = mysql_fetch_assoc($result);
 
 
-            echo "<h1>" . $row['Topic'] . "</h1><br>";
+            echo "<h1>" . $row['Title'] . "</h1><br>";
+            echo "<h3>" . $row['Topic'] . "</h3><br>";
             echo "<p>" . $row['Date'] . "</p><br>";
             echo "<p>" . $row['Article'] . "</p><br>";
             ?>
@@ -92,7 +93,7 @@
         <div id="comment" class="panel panel-default">
                     <div class="panel-heading">Leave a comment</div>
                     <div class="panel-body">
-                        <form  class="form-horizontal" action="comment.php" method="post" >
+                        <form  class="form-horizontal" action="savecom.php" method="post" >
                             <div class="form-group">
                                 <label for="jmeno" class="col-sm-2 control-label">Jméno:</label>
                                 <div class="col-sm-5">      
@@ -125,9 +126,10 @@
 
 
                                 </div>
+                            </div>
                         </form>
 
-                    </div>
+                    
                 </div>
             </div>
         

@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 if (isset($_SESSION['badpswd'])) {
     $warnpsw = true;
     echo 1;
@@ -65,13 +65,13 @@ if (isset($_SESSION['badcaptcha'])){
                         </div>';
                     }
                     ?>
-                    </div
+                    </div>
                     <div class="form-group">
                         <div class="col-sm-5">      
                             <img id="captcha" src="/securimage/securimage_show.php" alt="CAPTCHA Image" />
                         </div>
                     </div>
-                    <div class="form-group">
+                       <div class="form-group">
                         <div class="col-sm-5">      
                             <input type="text" name="captcha_code" size="10" maxlength="6" />
                             <a href="#" onclick="document.getElementById('captcha').src = '/securimage/securimage_show.php?' + Math.random();
