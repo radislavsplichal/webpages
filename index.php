@@ -37,6 +37,9 @@
                 }
                 div#content{
                     width: 70%;
+					background-color:white;
+					padding:5px;
+					margin:5px;
                 }
 
             </style>
