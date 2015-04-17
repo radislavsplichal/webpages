@@ -37,6 +37,9 @@
                 }
                 div#content{
                     width: 70%;
+					background-color:white;
+					padding:5px;
+					margin:5px;
                 }
 
             </style>
@@ -57,5 +60,6 @@
             <?php
             include'footer.html';
             ?>
+        </div>
     </body>
 </html>

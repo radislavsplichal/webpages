@@ -24,7 +24,7 @@ if ($row && $pass === $row['password'] )  {
 
     session_start();
     $_SESSION['username'] = $row['username'];
-
+    $_SESSION['uid'] = $row['id'];
 
 
     mysql_close($link);
