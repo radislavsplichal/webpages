@@ -28,7 +28,7 @@ if ($_FILES["fileimg"]["error"] == UPLOAD_ERR_OK) {
     echo $tmp_name;
     echo $name;
 } else {
-    echo 'nic se nestlo';
+    echo 'Obrázek nemohl být náhrán';
 }
 
 

@@ -70,9 +70,9 @@ session_start();
                 </ul>
                 <?php
                 if (isset($_SESSION['username'])) {
-                    include '/core/signout.html';
+                    include 'core/signout.html';
                 } else {
-                    include '/core/signin.html';
+                    include 'core/signin.html';
                     #echo $_SESSION['username'];
                 }
                 ?>    
