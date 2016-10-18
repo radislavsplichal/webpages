@@ -17,6 +17,7 @@
     <body>
 
         <?php
+        
         include'signup.php';
         include'header.html';
         ?>

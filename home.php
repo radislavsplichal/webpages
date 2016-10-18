@@ -7,11 +7,11 @@ include 'connection.php';
 
 $query = "SELECT ArticleID, Topic, Title, Article, IMG, Date FROM Articles ORDER BY Date";
 
-$result = mysql_query($query);
+$result = $mysqli->query($query);
 
 
 
-while ($row = mysql_fetch_assoc($result)) {
+while ($row = $result->fetch_object()) {
     echo "<td><a href='detail.php?article=" . $row['ArticleID'] . "'><h2>" . $row['Title'] . "</h2></a></td>";
 
     echo "<p>" . $row['Article'] . "</p>";
