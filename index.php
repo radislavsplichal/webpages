@@ -1,3 +1,12 @@
+<?php 
+ 
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="cs">
     <head>
@@ -9,12 +18,12 @@
 
         <title>Radislav Splichal</title>
         <meta name="description" content="Personal page">
-        <meta name="author" content="Ruda">
-
+        <!-- <meta name="author" content="Ruda"> -->
+        <script type="text/javascript" src="javascript.js"></script>
 
     </head>
 
-    <body>
+    <body onload="process()">
 
         <?php
         
@@ -50,10 +59,25 @@
             <hr>
 
             <div id="content">
-                <?php 
+            <h2>The sipmple AJAX script</h2>
+
+<p>THis is so cool</p>
+
+            <input type="text" id="userInput" name="test">
+<div id="underInput">
+
+
+                <!-- <?php 
                 include 'home.php';
-                ?>
+                ?> -->
             </div>
+
+
+
+
+ 
+
+
             <p><a href="#top" class="btn btn-primary btn-lg" role="button">Back on Top &raquo;</a></p>
 
 
