@@ -1,6 +1,6 @@
 <?php 
  
-
+include 'connection.php';
 
 ?>
 
@@ -28,7 +28,7 @@
         <?php
         
         include'signup.php';
-        include'header.html';
+        //include'header.html';
         ?>
 
  <style>

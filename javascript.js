@@ -4,9 +4,9 @@ function createXmlHttpRequestObject(){
 	var xmlHttp;
 	if (window.ActiveXObject) {
 		try {
-			xmlHttp = new ActiveXObject{"Microsoft.XMLHTTP"}
+			xmlHttp = new ActiveXObject("Microsoft.XMLHTTP")
 
-		}catch(e) {
+		} catch(e) {
 			xmlHttp = false;
 		}
 	}else {
@@ -29,9 +29,9 @@ function createXmlHttpRequestObject(){
 }
 function process () {
 	if (true) {
-
+		//alert("this is awesome	");
 	} else {
 
-		
-	};
+
+	}
 }
