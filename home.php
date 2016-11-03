@@ -1,13 +1,10 @@
 
 <?php
 
-include 'connection.php';
-
-
-
 $query = "SELECT ArticleID, Topic, Title, Article, IMG, Date FROM Articles ORDER BY Date";
 
-$result = $mysqli->query($query);
+
+
 
 
 
@@ -24,4 +21,3 @@ while ($row = $result->fetch_object()) {
 
 mysql_close($link);
 ?>
-	

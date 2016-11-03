@@ -1,11 +1,8 @@
-<?php 
- 
+<?php
+
 include 'connection.php';
 
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="cs">
@@ -25,65 +22,24 @@ include 'connection.php';
 
     <body onload="process()">
 
-        <?php
-        
-        include'signup.php';
-        //include'header.html';
-        ?>
+        <?php //include'signup.php';?>
 
- <style>
-
-                p{
-                    text-align: left;
-                }
-
-                a {
-                    text-decoration: none;
-                    color: black;
-                }
-                a:hover {
-                    text-decoration: none;
-                    color: grey;
-                }
-                div#content{
-                    width: 70%;
-					background-color:white;
-					padding:5px;
-					margin:5px;
-                }
-
-            </style>
         <div class="jumbotron">
-           
-            <h1><a href="#top">Welcome</a></h1>
-            <hr>
 
-            <div id="content">
+          <div id="content">
             <h2>The sipmple AJAX script</h2>
 
-<p>THis is so cool</p>
+            <p>This is so cool</p>
 
             <input type="text" id="userInput" name="test">
-<div id="underInput">
+            <div id="underInput">
 
 
-                <!-- <?php 
-                include 'home.php';
-                ?> -->
+              <?php include 'home.php' ?>
+
             </div>
-
-
-
-
- 
-
-
-            <p><a href="#top" class="btn btn-primary btn-lg" role="button">Back on Top &raquo;</a></p>
-
-
-
             <?php
-            include'footer.html';
+            include 'footer.html';
             ?>
         </div>
     </body>
